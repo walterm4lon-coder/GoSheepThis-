@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://d146spch561s8"]
+
+[ext_resource type="Script" uid="uid://dlg32jvpbwih0" path="res://area_2d.gd" id="1_gf172"]
+[ext_resource type="Texture2D" uid="uid://bs63btmybir4o" path="res://wheat.png" id="2_dl81w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dl81w"]
+size = Vector2(53.5, 51.5)
+
+[node name="Area2D" type="Area2D" unique_id=1338534830]
+script = ExtResource("1_gf172")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1818554254]
+shape = SubResource("RectangleShape2D_dl81w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=921697098]
+position = Vector2(1, 0.53906083)
+scale = Vector2(0.09959378, 0.101843745)
+texture = ExtResource("2_dl81w")
